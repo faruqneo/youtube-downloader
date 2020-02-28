@@ -4,7 +4,7 @@ const ytdl = require('ytdl-core');
 
 const app = express();
 
-app.use(cors('*'));
+app.use(cors());
 
 app.get('/download', (req, res) => {
     const URL = req.query.URL;
